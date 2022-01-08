@@ -1,0 +1,9 @@
+FROM python:3.8 as builder
+COPY requirements.txt .
+
+RUN pip install --user -r requirements.txt
+
+ADD task_1.py /
+
+CMD ["cd", "app/task_1"]
+CMD ["python","task_1.py"]

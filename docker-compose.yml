@@ -1,0 +1,8 @@
+version: "3"
+services:
+  task_1:
+    build: app/task_1/
+    command: python ./task_1.py
+  task_2:
+    build: app/task_2/
+    command: python ./task_2.py
